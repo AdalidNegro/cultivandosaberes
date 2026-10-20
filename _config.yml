@@ -1,20 +1,38 @@
-# Información Principal
+# Configuración del Sitio
 title: "Fundación Red Cultivando Saberes"
-tagline: "Región Caribe Colombiano"
-description: "Sembrar memoria, tejer paz y cosechar desarrollo de territorios."
-url: "https://tu-usuario.github.io" # Reemplaza por tu dominio o usuario de GitHub
-baseurl: "" # Si no usas dominio propio y tu repo no es tu-usuario.github.io, pon "/nombre-repositorio"
-
-# Datos de Contacto
+subtitle: "Región Caribe Colombiano"
 email: "32mavire@gmail.com"
-phone: "+57 310 690 35 08"
+description: "Sembrar memoria, tejer paz y cosechar desarrollo de territorios."
+
+# URL y Rutas
+# Si el repositorio se llama exatamente tu-usuario.github.io, deja baseurl en ""
+# Si el repositorio tiene otro nombre (ej. fundacion-cultivando-saberes), pon "/nombre-repositorio"
+baseurl: ""
+url: "https://tu-usuario.github.io" # Reemplaza tu-usuario por tu nombre de usuario en GitHub
+
+# Información Institucional y de Contacto
+company_name: "Fundación Red Cultivando Saberes"
+address_line: "Región Caribe Colombiano — Cobertura en municipios de la región"
+telephone_number: "+57 310 690 35 08"
+company_email: "32mavire@gmail.com"
 secretary: "Maria Victoria Reyes"
 
-# Redes / Metadatos
-locale: "es_CO"
+# Redes Sociales (Opcionales - Puedes reemplazarlas o dejarlas vacías si aún no tienen)
+twitter_username: ""
+github_username: ""
+facebook_username: ""
+instagram_username: ""
 
-# Configuración Jekyll
+# Configuración de Build de Jekyll
 markdown: kramdown
+theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Exclusiones al compilar el sitio
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
