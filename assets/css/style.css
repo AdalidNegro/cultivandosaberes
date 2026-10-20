@@ -237,7 +237,7 @@ address {
 }
 /*
 * ==========================================================================
-* Navbar
+* Navbar Fija (Sticky Navbar)
 * ==========================================================================
 */
 .active{
@@ -246,10 +246,27 @@ address {
 }
 .navbar {
   font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 0;
 }
+
+#navbar-section {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Compensación de margen superior para que la barra fija no solape el contenido */
+body {
+  padding-top: 70px !important;
+}
+
 /*
 * ==========================================================================
 * Navbar Nav Links
@@ -333,13 +350,11 @@ address {
     width: 270px;
     height: 96px;
     padding: 30px 10px;
-    /*background: url(../img/logo.png) 20px center no-repeat; */
 }
 @media (min-width: 50px) and (max-width: 768px) { 
         .header a.brand {
         width: 170px;
         margin-top:-41px;
-        margin-top: -41px;
         position: absolute;
         font-size: 37px;
      } 
@@ -492,14 +507,12 @@ p.blog-text{
   color: white;
 }
 
-
 /* ----- Footer ----- */
 .footer-widget{
     color:white;
     margin-top: 55px;
     position: absolute;
 }
-
 
 footer .widget h4 {
     margin-top: 20px;
@@ -533,7 +546,6 @@ footer h3 {
     color: white;
 }
 
-
 /*Social Buttons */
 #social-icons{
   font-size: 22px;
@@ -558,9 +570,6 @@ footer h3 {
 * Custom Sidebar Widgets
 * ==========================================================================
 */
-
-
-
 #custom-search-input {
         margin:0;
         margin-top: 10px;
@@ -572,8 +581,6 @@ footer h3 {
         padding-right: 4px \9;
         padding-left: 3px;
         padding-left: 4px \9;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
- 
         margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -583,12 +590,10 @@ footer h3 {
     #custom-search-input button {
         border: 0;
         background: none;
-        /** belows styles are working good */
         padding: 2px 5px;
         margin-top: 2px;
         position: relative;
         left: -28px;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
         margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -600,8 +605,7 @@ footer h3 {
         z-index: 3;   
     }
 
-   
-    /*
+/*
 * ==========================================================================
 * Image Card
 * ==========================================================================
@@ -619,7 +623,6 @@ footer h3 {
     padding: 0;
     background-color: #FFFFFF;
 }
-
 
 .lib-panel .lib-row {
     padding: 0 20px 0 20px;
