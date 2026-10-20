@@ -7,8 +7,9 @@ description: "Sembrar memoria, tejer paz y cosechar desarrollo de territorios."
 # URL y Rutas
 # Si el repositorio se llama exatamente tu-usuario.github.io, deja baseurl en ""
 # Si el repositorio tiene otro nombre (ej. fundacion-cultivando-saberes), pon "/nombre-repositorio"
-baseurl: ""
-url: "https://tu-usuario.github.io" # Reemplaza tu-usuario por tu nombre de usuario en GitHub
+url: "https://adalidnegro.github.io"
+baseurl: "/cultivandosaberes"
+
 
 # Información Institucional y de Contacto
 company_name: "Fundación Red Cultivando Saberes"
