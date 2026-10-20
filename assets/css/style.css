@@ -767,3 +767,30 @@ footer h3 {
     font-size: 14px;
   }
 }
+
+/*
+* ==========================================================================
+* Forzar ancho completo en monitores UltraWide / Pantallas Anchas
+* ==========================================================================
+*/
+#carousel-section,
+#carousel-section .container-fluid-kamn,
+#carousel-section .row,
+#carousel-1,
+.carousel-inner,
+.carousel-inner .item {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.carousel-inner .item img {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 500px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
