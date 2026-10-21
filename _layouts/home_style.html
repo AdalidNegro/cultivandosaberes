@@ -2,75 +2,74 @@
 <html lang="es">
 
   {% include head.html %}
-  {% include header.html %}
-  {% include script.html %}
 
-  <body>
-    <!-- Begin #carousel-section -->
-    <section id="carousel-section" class="section-global-wrapper"> 
-        <div class="container-fluid-kamn">
-            <div class="row">
-                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+  <body style="padding-top: 75px;">
+    
+    {% include header.html %}
 
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators visible-lg">
-                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-1" data-slide-to="1"></li>
-                        <li data-target="#carousel-1" data-slide-to="2"></li>
-                    </ol>
-        
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <!-- Begin Slide 1 -->
-                        <div class="item active">
-                            <img src="{{ '/assets/img/slider/slide4.jpg' | relative_url }}" height="400" alt="Fundación Red Cultivando Saberes">
-                            <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">FUNDACIÓN RED CULTIVANDO SABERES</h3>
-                                <p class="carousel-body">REGIÓN CARIBE COLOMBIANO</p>
-                            </div>
-                        </div>
-                        <!-- End Slide 1 -->
+    <!-- Sección del Carrusel (Bootstrap 5) -->
+    <section id="carousel-section"> 
+      <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
 
-                        <!-- Begin Slide 2 -->
-                        <div class="item">
-                            <img src="{{ '/assets/img/slider/slide5.jpg' | relative_url }}" height="400" alt="Región Caribe Colombiano">
-                            <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">SEMBRAR MEMORIA, TEJER PAZ</h3>
-                                <p class="carousel-body">Y COSECHAR DESARROLLO DE TERRITORIOS</p>
-                            </div>
-                        </div>
-                        <!-- End Slide 2 -->
-
-                        <!-- Begin Slide 3 -->
-                        <div class="item">
-                            <img src="{{ '/assets/img/slider/slide2.jpg' | relative_url }}" height="400" alt="Escuela Popular y Círculos de Estudio">
-                            <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">ESCUELA POPULAR Y DIGNIDAD</h3>
-                                <p class="carousel-body">LOS TEMAS LOS ESCOGE CADA COMUNIDAD</p>
-                            </div>
-                        </div>
-                        <!-- End Slide 3 -->
-                    </div>
-        
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-1" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-            </div>
+        <!-- Indicadores inferiores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
         </div>
-    </section>
-    <!-- End #carousel-section -->
+    
+        <!-- Diapositivas -->
+        <div class="carousel-inner">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="{{ '/assets/img/slider/slide2.jpg' | relative_url }}" class="d-block w-100" alt="Fundación Red Cultivando Saberes">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h3 class="fw-bold text-warning mb-1">FUNDACIÓN RED CULTIVANDO SABERES</h3>
+              <p class="mb-0 fs-5">REGIÓN CARIBE COLOMBIANO</p>
+            </div>
+          </div>
 
-    <!-- Dynamic Content from index.html -->
-    <div class="main-content">
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="{{ '/assets/img/slider/slide4.jpg' | relative_url }}" class="d-block w-100" alt="Región Caribe Colombiano">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h3 class="fw-bold text-warning mb-1">SEMBRAR MEMORIA, TEJER PAZ</h3>
+              <p class="mb-0 fs-5">Y COSECHAR DESARROLLO DE TERRITORIOS</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="{{ '/assets/img/slider/slide2.jpg' | relative_url }}" class="d-block w-100" alt="Escuela Popular y Círculos de Estudio">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+              <h3 class="fw-bold text-warning mb-1">ESCUELA POPULAR Y DIGNIDAD</h3>
+              <p class="mb-0 fs-5">LOS TEMAS LOS ESCOGE CADA COMUNIDAD</p>
+            </div>
+          </div>
+
+        </div>
+    
+        <!-- Flechas de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Contenido Dinámico de la Página (index.html) -->
+    <main class="main-content">
       {{ content }}
-    </div>
+    </main>
+
+    {% include footer.html %}
+    {% include script.html %}
 
   </body>
-
-  {% include footer.html %}
 </html>
