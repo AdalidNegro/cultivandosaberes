@@ -3,15 +3,12 @@ layout: home_style
 title: "Fundación Red Cultivando Saberes"
 ---
 
-<!-- FontAwesome para iconos -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <!-- SECCIÓN: QUIÉNES SOMOS -->
-<section id="quienes-somos" style="padding: 3rem 0; text-align: center;">
+<section id="quienes-somos" class="py-5 text-center bg-white">
   <div class="container">
-    <h2>Quiénes Somos</h2>
-    <p style="font-size: 1.25rem; max-width: 850px; margin: 0 auto; line-height: 1.8;">
-      <strong>Décadas de tejer gobernanza desde las raíces de nuestro pueblo Caribe</strong>, de participación activa en crear organización y espacios de pensar con la comunidad y sus propias metas.
+    <h2 class="fw-bold text-success mb-3">Quiénes Somos</h2>
+    <p class="fs-5 max-width-850 mx-auto leading-relaxed text-secondary" style="max-width: 850px;">
+      <strong class="text-dark">Décadas de tejer gobernanza desde las raíces de nuestro pueblo Caribe</strong>, de participación activa en crear organización y espacios de pensar con la comunidad y sus propias metas.
     </p>
   </div>
 </section>
@@ -19,27 +16,56 @@ title: "Fundación Red Cultivando Saberes"
 <hr />
 
 <!-- SECCIÓN: NUESTRA MISIÓN -->
-<section id="mision" style="padding: 3rem 0;">
+<section id="mision" class="py-5 bg-light">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 2rem;">Nuestra Misión</h2>
-    <p style="text-align: center; font-size: 1.2rem; font-weight: bold; margin-bottom: 2rem; color: #2e7d32;">
-      Red de Círculos de Estudio que construyen Escuela Popular
-    </p>
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-success mb-2">Nuestra Misión</h2>
+      <p class="fs-5 fw-bold text-success">
+        Red de Círculos de Estudio que construyen Escuela Popular
+      </p>
+    </div>
 
-    <div class="row" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
-      <div style="flex: 1; min-width: 280px; max-width: 350px; background: #ffffff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #2e7d32; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-        <h3><i class="fa-solid fa-seedling" style="color: #2e7d32; margin-right: 8px;"></i> Sembrar Memoria</h3>
-        <p><strong>La memoria no se archiva, se siembra en comunidad.</strong> Avanzamos día a día de la tradición oral hacia la incidencia comunitaria y territorial efectiva.</p>
+    <div class="row g-4 justify-content-center">
+      <!-- Tarjeta 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm border-top border-4 border-success p-4">
+          <div class="card-body">
+            <h3 class="h4 card-title fw-bold text-success mb-3">
+              <i class="fa-solid fa-seedling me-2"></i> Sembrar Memoria
+            </h3>
+            <p class="card-text text-secondary">
+              <strong class="text-dark">La memoria no se archiva, se siembra en comunidad.</strong> Avanzamos día a día de la tradición oral hacia la incidencia comunitaria y territorial efectiva.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div style="flex: 1; min-width: 280px; max-width: 350px; background: #ffffff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #d84315; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-        <h3><i class="fa-solid fa-hands-holding-circle" style="color: #d84315; margin-right: 8px;"></i> Escuela de Dignidad</h3>
-        <p>Los Círculos de Estudio actúan como escuelas populares de dignidad, donde <strong>los temas y debates los escoge de manera autónoma cada comunidad</strong>.</p>
+      <!-- Tarjeta 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm border-top border-4 border-danger p-4">
+          <div class="card-body">
+            <h3 class="h4 card-title fw-bold text-danger mb-3">
+              <i class="fa-solid fa-hands-holding-circle me-2"></i> Escuela de Dignidad
+            </h3>
+            <p class="card-text text-secondary">
+              Los Círculos de Estudio actúan como escuelas populares de dignidad, donde <strong class="text-dark">los temas y debates los escoge de manera autónoma cada comunidad</strong>.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div style="flex: 1; min-width: 280px; max-width: 350px; background: #ffffff; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #fbc02d; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-        <h3><i class="fa-solid fa-graduation-cap" style="color: #fbc02d; margin-right: 8px;"></i> Prioridad Educativa</h3>
-        <p>Poner de presente cuáles carreras académicas y cuál capacitación son la prioridad en el territorio y su orden. <strong>Siempre queremos + para nuestra gente.</strong></p>
+      <!-- Tarjeta 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm border-top border-4 border-warning p-4">
+          <div class="card-body">
+            <h3 class="h4 card-title fw-bold text-warning mb-3">
+              <i class="fa-solid fa-graduation-cap me-2"></i> Prioridad Educativa
+            </h3>
+            <p class="card-text text-secondary">
+              Poner de presente cuáles carreras académicas y cuál capacitación son la prioridad en el territorio y su orden. <strong class="text-dark">Siempre queremos + para nuestra gente.</strong>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -48,24 +74,24 @@ title: "Fundación Red Cultivando Saberes"
 <hr />
 
 <!-- SECCIÓN: TERRITORIO Y DIVERSIDAD -->
-<section id="territorio" style="padding: 3rem 0; background-color: #fafafa;">
-  <div class="container" style="text-align: center;">
-    <h2 style="margin-bottom: 1.5rem;">Nuestro Territorio y Tejido Social</h2>
-    <p style="font-size: 1.15rem; max-width: 900px; margin: 0 auto 2rem auto; font-style: italic;">
+<section id="territorio" class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold text-success mb-3">Nuestro Territorio y Tejido Social</h2>
+    <p class="fs-5 fst-italic mx-auto mb-4 text-secondary" style="max-width: 900px;">
       "Donde los ríos, ciénagas, tierras fértiles, humedales, sabanas, serranía, altas montañas y desiertos encuentran el mar, nuestros saberes son el puente que unifica."
     </p>
 
-    <h3>Un solo tejido por el bien común entre:</h3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.5rem;">
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Indígenas</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Comunidades Afro</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Campesinos</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Pescadores</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Mujeres</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Jóvenes</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Descendientes Europeos</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Descendientes Árabes</span>
-      <span style="background: #e8f5e9; color: #1b5e20; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">Descendientes de las Islas</span>
+    <h3 class="h5 fw-bold mb-3 text-dark">Un solo tejido por el bien común entre:</h3>
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Indígenas</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Comunidades Afro</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Campesinos</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Pescadores</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Mujeres</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Jóvenes</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Descendientes Europeos</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Descendientes Árabes</span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fs-6 fw-semibold">Descendientes de las Islas</span>
     </div>
   </div>
 </section>
@@ -73,15 +99,15 @@ title: "Fundación Red Cultivando Saberes"
 <hr />
 
 <!-- SECCIÓN DEDICADA DE DESCARGA -->
-<section id="descargas" style="padding: 3.5rem 0; background-color: #e8f5e9; text-align: center;">
+<section id="descargas" class="py-5 bg-success bg-opacity-10 text-center">
   <div class="container">
-    <h2 style="color: #1b5e20; margin-bottom: 1rem;">Documentos Institucionales</h2>
-    <p style="font-size: 1.15rem; max-width: 750px; margin: 0 auto 2rem auto; color: #333;">
+    <h2 class="fw-bold text-success mb-3">Documentos Institucionales</h2>
+    <p class="fs-5 text-secondary mx-auto mb-4" style="max-width: 750px;">
       Descarga la información completa sobre nuestra Red de Círculos de Estudio, propuesta de Escuela Popular y procesos comunitarios en la Región Caribe.
     </p>
     
-    <a href="{{ '/assets/docs/Red%20Circulos%20de%20Est%201%20.pdf' | relative_url }}" download class="btn btn-primary btn-lg" style="background-color: #1b5e20; border: none; padding: 14px 28px; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: inline-block;">
-      <i class="fa-solid fa-file-pdf" style="margin-right: 10px;"></i> Descargar Círculos de Estudio (PDF)
+    <a href="{{ '/assets/docs/Red%20Circulos%20de%20Est%201%20.pdf' | relative_url }}" download="Red_Circulos_de_Estudio.pdf" class="btn btn-success btn-lg px-4 py-3 fw-bold shadow-sm">
+      <i class="fa-solid fa-file-pdf me-2"></i> Descargar Círculos de Estudio (PDF)
     </a>
   </div>
 </section>
@@ -89,28 +115,44 @@ title: "Fundación Red Cultivando Saberes"
 <hr />
 
 <!-- SECCIÓN: CONTACTO -->
-<section id="contacto" style="padding: 3rem 0; text-align: center;">
+<section id="contacto" class="py-5 bg-white text-center">
   <div class="container">
-    <h2>Información de Contacto</h2>
-    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Líderes de la fundación en los municipios de la Región Caribe</p>
+    <h2 class="fw-bold text-success mb-2">Información de Contacto</h2>
+    <p class="fs-6 text-secondary mb-5">Líderes de la fundación en los municipios de la Región Caribe</p>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-      <div style="background: #ffffff; padding: 1.5rem 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); min-width: 250px;">
-        <i class="fa-solid fa-user-tie" style="font-size: 1.8rem; color: #2e7d32; margin-bottom: 0.5rem;"></i>
-        <h4 style="margin-bottom: 0.5rem;">Secretaría</h4>
-        <p style="margin: 0;">Maria Victoria Reyes</p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <i class="fa-solid fa-user-tie fs-1 text-success mb-3"></i>
+            <h3 class="h5 card-title fw-bold mb-2">Secretaría</h3>
+            <p class="card-text text-secondary mb-0">Maria Victoria Reyes</p>
+          </div>
+        </div>
       </div>
 
-      <div style="background: #ffffff; padding: 1.5rem 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); min-width: 250px;">
-        <i class="fa-solid fa-phone" style="font-size: 1.8rem; color: #2e7d32; margin-bottom: 0.5rem;"></i>
-        <h4 style="margin-bottom: 0.5rem;">Teléfono / WhatsApp</h4>
-        <p style="margin: 0;"><a href="tel:+573106903508" style="color: #2e7d32; font-weight: bold; text-decoration: none;">+57 310 690 35 08</a></p>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <i class="fa-solid fa-phone fs-1 text-success mb-3"></i>
+            <h3 class="h5 card-title fw-bold mb-2">Teléfono / WhatsApp</h3>
+            <p class="card-text mb-0">
+              <a href="tel:+573106903508" class="text-success fw-bold text-decoration-none">+57 310 690 35 08</a>
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div style="background: #ffffff; padding: 1.5rem 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); min-width: 250px;">
-        <i class="fa-solid fa-envelope" style="font-size: 1.8rem; color: #2e7d32; margin-bottom: 0.5rem;"></i>
-        <h4 style="margin-bottom: 0.5rem;">Correo Electrónico</h4>
-        <p style="margin: 0;"><a href="mailto:32mavire@gmail.com" style="color: #2e7d32; font-weight: bold; text-decoration: none;">32mavire@gmail.com</a></p>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <i class="fa-solid fa-envelope fs-1 text-success mb-3"></i>
+            <h3 class="h5 card-title fw-bold mb-2">Correo Electrónico</h3>
+            <p class="card-text mb-0">
+              <a href="mailto:32mavire@gmail.com" class="text-success fw-bold text-decoration-none">32mavire@gmail.com</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
