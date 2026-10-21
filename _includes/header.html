@@ -1,44 +1,41 @@
-<!-- Header Fijo / Sticky Navbar -->
-<nav id="navbar-section" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<!-- Header / Navbar Fija (Bootstrap 5) -->
+<nav id="navbar-section" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
   <div class="container">
-  
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="sr-only">Navegación</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+    
+    <!-- Logo y Nombre de la Fundación -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="Fundación Red Cultivando Saberes" style="height: 45px; width: auto;">
+      <span class="fw-bold text-success fs-5">Cultivando Saberes</span>
+    </a>
+
+    <!-- Botón de Menú Hamburguesa para Celulares -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Navegación">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand wow fadeInDownBig" href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 10px; padding-top: 5px; text-decoration: none;">
-      <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="Fundación Red Cultivando Saberes" style="height: 45px; width: auto; max-height: 100%;">
-      <span style="font-weight: bold; color: #1b5e20; font-size: 1.2rem;">Cultivando Saberes</span>
-    </a>      
-  </div>
+    <!-- Enlaces de Navegación -->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ '/' | relative_url }}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/#quienes-somos' | relative_url }}">Quiénes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/#mision' | relative_url }}">Nuestra Misión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/#territorio' | relative_url }}">Territorio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/#descargas' | relative_url }}">Descargas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/#contacto' | relative_url }}">Contacto</a>
+        </li>
+      </ul>
+    </div>
 
-  <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav pull-right">
-      <li class="active">
-        <a href="{{ '/' | relative_url }}">Inicio</a>
-      </li>
-      <li>
-        <a href="{{ '/#quienes-somos' | relative_url }}">Quiénes Somos</a>
-      </li>
-      <li>
-        <a href="{{ '/#mision' | relative_url }}">Nuestra Misión</a>
-      </li>
-      <li>
-        <a href="{{ '/#territorio' | relative_url }}">Territorio</a>
-      </li>
-      <li>
-        <a href="{{ '/#descargas' | relative_url }}">Descargas</a>
-      </li>
-      <li>
-        <a href="{{ '/#contacto' | relative_url }}"><span>Contacto</span></a>
-      </li>
-    </ul>         
-  </div>
   </div>
 </nav>
-
-<!-- End Header -->
