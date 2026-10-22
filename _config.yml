@@ -4,21 +4,18 @@ subtitle: "Región Caribe Colombiano"
 email: "32mavire@gmail.com"
 description: "Sembrar memoria, tejer paz y cosechar desarrollo de territorios."
 
-# URL y Rutas
-# Si el repositorio se llama exatamente tu-usuario.github.io, deja baseurl en ""
-# Si el repositorio tiene otro nombre (ej. fundacion-cultivando-saberes), pon "/nombre-repositorio"
-url: "https://adalidnegro.github.io"
-baseurl: "/cultivandosaberes"
-
+# URL y Rutas (Configuración para Dominio Personalizado)
+url: "https://redcultivandosaberes.org"
+baseurl: ""
 
 # Información Institucional y de Contacto
 company_name: "Fundación Red Cultivando Saberes"
 address_line: "Cobertura en varios municipios"
 telephone_number: "+57 310 690 35 08"
 company_email: "32mavire@gmail.com"
-secretary: "Ciliana Galván"
+secretary: "Maria Victoria Reyes"
 
-# Redes Sociales (Opcionales - Puedes reemplazarlas o dejarlas vacías si aún no tienen)
+# Redes Sociales (Opcionales)
 twitter_username: ""
 github_username: ""
 facebook_username: ""
@@ -26,10 +23,10 @@ instagram_username: ""
 
 # Configuración de Build de Jekyll
 markdown: kramdown
-theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclusiones al compilar el sitio
 exclude:
